@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>get cookie</title>
+</head>
+<body>
+<h1 th:text="${cookie}"></h1>
+<a th:href="@{/getTable}">获取2次cookies</a>
+<p th:if="${table != null}" th:text="${table}"></p>
+</body>
+</html>
